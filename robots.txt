@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
+Disallow: /404.html
 
+# Sitemaps
 Sitemap: https://devontoh.com/sitemap.xml
+
+# Crawl-delay (optional, respected by Bing)
+User-agent: Bingbot
+Crawl-delay: 1
+
+# Host directive
+Host: https://devontoh.com

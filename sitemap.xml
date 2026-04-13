@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://devontoh.com/</loc>
     <lastmod>2026-04-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://1.gravatar.com/avatar/ac4d1aec81986fe98a61e31b22b1a3a2e2b0ef2046751b74760c8d0763c6ade8?size=1200</image:loc>
+      <image:title>Devon Toh - Automation Consultant at Baraco AI</image:title>
+      <image:caption>Devon Toh profile photo</image:caption>
+    </image:image>
   </url>
 </urlset>
