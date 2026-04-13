@@ -3,9 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devon Toh - Automation Consultant</title>
-  <meta name="description" content="I help businesses streamline workflows and automate systems." />
+  <title>Devon Toh | Automation Consultant at Baraco AI</title>
+  <meta name="description" content="Devon Toh - Automation Consultant at Baraco AI. I help businesses streamline workflows and automate systems using n8n, AI integration, and custom automation solutions." />
+  <link rel="canonical" href="https://devontoh.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Devon Toh | Automation Consultant" />
+  <meta property="og:description" content="I help businesses streamline workflows and automate systems using n8n, AI integration, and custom automation solutions." />
+  <meta property="og:url" content="https://devontoh.com/" />
+  <meta property="og:image" content="https://1.gravatar.com/avatar/ac4d1aec81986fe98a61e31b22b1a3a2e2b0ef2046751b74760c8d0763c6ade8?size=600" />
+  <meta property="og:site_name" content="Devon Toh" />
+  <meta property="profile:first_name" content="Devon" />
+  <meta property="profile:last_name" content="Toh" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Devon Toh | Automation Consultant" />
+  <meta name="twitter:description" content="I help businesses streamline workflows and automate systems using n8n, AI integration, and custom automation solutions." />
+  <meta name="twitter:image" content="https://1.gravatar.com/avatar/ac4d1aec81986fe98a61e31b22b1a3a2e2b0ef2046751b74760c8d0763c6ade8?size=600" />
+
+  <!-- Theme & Mobile -->
+  <meta name="theme-color" content="#0c0c1a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
   <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Devon Toh",
+    "url": "https://devontoh.com",
+    "image": "https://1.gravatar.com/avatar/ac4d1aec81986fe98a61e31b22b1a3a2e2b0ef2046751b74760c8d0763c6ade8?size=600",
+    "jobTitle": "Automation Consultant",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Baraco AI",
+      "url": "https://baraco.ai"
+    },
+    "description": "I help businesses streamline workflows and automate systems",
+    "sameAs": [
+      "https://www.linkedin.com/in/devontoh/",
+      "https://www.facebook.com/devontoh/",
+      "https://medium.com/@d3v0nt",
+      "https://substack.com/@devontoh",
+      "https://www.youtube.com/@D3V0NT",
+      "https://github.com/D3V0NT"
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after {
       margin: 0;
@@ -24,7 +74,7 @@
       --text-primary: #ffffff;
       --text-secondary: rgba(255, 255, 255, 0.65);
       --text-muted: rgba(255, 255, 255, 0.4);
-      --avatar-size: 96px;
+      --avatar-size: 128px;
       --radius: 16px;
       --font: 'Inter', system-ui, -apple-system, sans-serif;
     }
@@ -68,10 +118,11 @@
 
     .card__header {
       padding: 0 24px;
-      margin-top: -48px;
+      margin-top: -64px;
       display: flex;
-      align-items: flex-end;
-      gap: 16px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
       position: relative;
       z-index: 2;
     }
@@ -87,7 +138,7 @@
     }
 
     .card__info {
-      padding-bottom: 8px;
+      text-align: left;
     }
 
     .card__name {
@@ -156,7 +207,7 @@
     }
 
     .card__bio {
-      font-size: 14px;
+      font-size: 12px;
       color: #ffffff;
       line-height: 1.6;
       margin-bottom: 20px;
@@ -265,6 +316,11 @@
       transform: scale(0.125);
       transform-origin: top left;
       pointer-events: none;
+      scrollbar-width: none;
+    }
+
+    .links__item-preview iframe::-webkit-scrollbar {
+      display: none;
     }
 
     .links__item-content {
@@ -671,7 +727,7 @@
 
     @media (max-width: 480px) {
       body {
-        padding: 24px 12px;
+        padding: 16px 10px;
       }
 
       .card__banner {
@@ -679,38 +735,168 @@
       }
 
       :root {
-        --avatar-size: 80px;
+        --avatar-size: 112px;
       }
 
       .card__header {
-        margin-top: -40px;
+        margin-top: -56px;
         padding: 0 16px;
+        gap: 12px;
       }
 
       .card__name {
         font-size: 20px;
       }
 
+      .card__title {
+        font-size: 12px;
+      }
+
       .card__body {
         padding: 12px 16px 20px;
+      }
+
+      .card__socials {
+        flex-wrap: wrap;
+        gap: 3px;
+      }
+
+      .card__social-icon {
+        width: 26px;
+        height: 26px;
+      }
+
+      .card__social-icon svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      .card__buttons {
+        flex-direction: row;
+        gap: 6px;
+      }
+
+      .card__btn {
+        padding: 6px 8px;
+        font-size: 11px;
+        min-height: 32px;
+      }
+
+      .links {
+        padding: 16px;
+      }
+
+      .links__item {
+        flex-direction: column;
+      }
+
+      .links__item-preview {
+        width: 100%;
+        height: 180px;
+        border-right: none;
+        border-bottom: 2px solid var(--card-bg);
+      }
+
+      .links__item-preview iframe {
+        width: 1280px;
+        height: 720px;
+        transform: scale(0.35);
+        transform-origin: top left;
+      }
+
+      .links__item-content {
+        padding: 12px 16px;
       }
 
       .accounts {
         padding: 16px;
       }
+
+      .accounts__item {
+        padding: 12px 8px;
+        min-height: 44px;
+      }
+
+      .accounts__item-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .accounts__item-icon svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .modal {
+        max-width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .modal__qr-wrapper {
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      :root {
+        --avatar-size: 64px;
+      }
+
+      .card__header {
+        margin-top: -32px;
+      }
+
+      .card__name {
+        font-size: 16px;
+      }
+
+      .card__social-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .card__social-icon svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+    /* Skip link */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 16px;
+      background: var(--accent);
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      z-index: 200;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    /* Smooth tap highlight for mobile */
+    a, button {
+      -webkit-tap-highlight-color: rgba(6, 182, 212, 0.15);
     }
   </style>
 </head>
 <body>
+  <a href="#profile" class="skip-link">Skip to content</a>
 
-  <main class="profile">
+  <main class="profile" id="profile">
     <!-- Top Profile Card -->
     <div class="card">
       <!-- Banner image -->
       <img
         class="card__banner"
         src="https://1.gravatar.com/avatar/ac4d1aec81986fe98a61e31b22b1a3a2e2b0ef2046751b74760c8d0763c6ade8?size=600"
-        alt=""
+        alt="Devon Toh profile banner"
         style="filter: blur(20px) brightness(0.7); transform: scale(1.1);"
       />
 
@@ -781,7 +967,7 @@
         <div class="links__list">
           <a href="https://baraco.ai" target="_blank" rel="noopener noreferrer" class="links__item">
             <div class="links__item-preview" aria-hidden="true">
-              <iframe src="https://baraco.ai" tabindex="-1" loading="lazy" title="Baraco AI preview"></iframe>
+              <iframe src="https://baraco.ai" tabindex="-1" loading="lazy" title="Baraco AI preview" scrolling="no"></iframe>
             </div>
             <div class="links__item-content">
               <span class="links__item-label">Baraco AI <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg></span>
@@ -1030,7 +1216,7 @@
         'FN:Devon Toh',
         'TITLE:Automation Consultant',
         'ORG:Baraco AI',
-        'EMAIL:gabriel@baraco.ai',
+        'EMAIL:devon@baraco.ai',
         'URL:https://devontoh.com',
         'URL:https://baraco.ai',
         'URL:https://www.linkedin.com/in/devontoh/',
